@@ -4,7 +4,7 @@
 
 Message anyone on WhatsApp without saving their number.
 
-A simple, one-page generator that creates ready-to-share WhatsApp links with an optional pre-filled message. No backend, no backend login — just copy, share, or scan.
+A simple, one-page generator that creates ready-to-share WhatsApp links with an optional pre-filled message.
 
 ```
 https://wa.me/{number}?text={message}
@@ -12,13 +12,13 @@ https://wa.me/{number}?text={message}
 
 ## Features
 
-- **Instant contact-free messaging** — Start a chat with anyone without saving their number
-- **Country code support** — Default to India (+91) or choose from multiple countries
-- **Pre-filled messages** — Include an optional message that opens automatically in WhatsApp
-- **QR code generation** — Scannable links for hands-free sharing
-- **Copy & share** — One-click link copying or direct WhatsApp opener
-- **Mobile responsive** — Fully optimized for phone and desktop
-- **Zero backend** — Pure static HTML + CSS. No server, no tracking
+- **Instant contact-free messaging** - Start a chat with anyone without saving their number
+- **Country code support** - Default to India (+91) or choose from multiple countries
+- **Pre-filled messages** - Include an optional message that opens automatically in WhatsApp
+- **QR code generation** - Scannable links for hands-free sharing
+- **Copy & share** - One-click link copying or direct WhatsApp opener
+- **Mobile responsive** - Fully optimized for phone and desktop
+- **Zero backend** - Pure static HTML + CSS. No server, no tracking
 
 ## How it works
 
@@ -32,7 +32,7 @@ Generate a clean WhatsApp link with an optional pre-filled message that appears 
 
 Example:
 ```
-https://wa.me/919876543210?text=Hi%2C%20I%20found%20your%20number%20on%20WA%20Link%20and%20would%20like%20to%20chat.
+https://wa.me/9198765xxxxx?text=Hi%2C%20I%20found%20your%20number%20on%20WA%20Link%20and%20would%20like%20to%20chat.
 ```
 
 ### 3. Share anywhere
@@ -43,35 +43,22 @@ https://wa.me/919876543210?text=Hi%2C%20I%20found%20your%20number%20on%20WA%20Li
 
 ## Tech Stack
 
-- **HTML5** — Semantic markup
-- **CSS3** — Dark theme with WhatsApp green accents, fully responsive
-- **Vanilla JS** — No dependencies, lightweight
-- **Static hosting** — Deploy anywhere
+- **HTML5** - Semantic markup
+- **CSS3** - Dark theme with WhatsApp green accents, fully responsive
+- **Vanilla JS** - No dependencies, lightweight
 
 ## Deploying to Netlify
 
 This project is zero-config. No build step required.
 
-### Option A — Connect Git
+### Option A - Connect Git
 
-1. Push this repo to GitHub, GitLab, or Bitbucket
+1. Push this repo to GitHub
 2. In Netlify: **Add new site** → **Import an existing project** → select your repo
 3. Leave **Build command** empty and **Publish directory** as `.` (root)
 4. Deploy
 
-### Option B — Drag & drop
 
-1. In Netlify: **Create site** → **Deploy manually**
-2. Drag the project folder into the Netlify drop zone
-3. Done
-
-### Option C — Netlify CLI
-
-```bash
-npm install -g netlify-cli
-netlify deploy              # preview deployment
-netlify deploy --prod       # production deployment
-```
 
 ## File structure
 
