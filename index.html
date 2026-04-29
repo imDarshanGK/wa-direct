@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WA Link</title>
+    <meta
+      name="description"
+      content="Message anyone on WhatsApp without saving their number."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2325D366'/%3E%3Cpath d='M16 16h32v32H16z' fill='none'/%3E%3Cpath d='M20 28c0-4.4 3.6-8 8-8h8c4.4 0 8 3.6 8 8v4c0 4.4-3.6 8-8 8h-7l-5 5v-5h-4c-4.4 0-8-3.6-8-8v-4Z' fill='%2307110C' fill-opacity='.9'/%3E%3Cpath d='M24.5 24h15a1.5 1.5 0 0 1 0 3h-15a1.5 1.5 0 0 1 0-3Zm0 6h10a1.5 1.5 0 0 1 0 3h-10a1.5 1.5 0 0 1 0-3Z' fill='%23EAF9EE'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero-shell">
+      <header class="topbar" aria-label="Primary">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">WA</div>
+          <div class="brand-copy">
+            <span class="brand-name">WA Link</span>
+            <span class="brand-tag">Direct WhatsApp messaging</span>
+          </div>
+        </div>
+        <a class="topbar-link" href="#get-started">Get Started</a>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Instant contact-free messaging</p>
+          <h1 id="hero-title">Message anyone on WhatsApp without saving their number.</h1>
+          <p class="subhead">
+            WA Link makes it fast to start a chat, send a quote, or reach a client in one tap.
+          </p>
+          <div class="hero-actions" id="get-started">
+            <a class="button button-primary" href="#">Open WhatsApp</a>
+            <a class="button button-secondary" href="#">Learn more</a>
+          </div>
+          <div class="hero-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            Simple, direct, and built around WhatsApp green.
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="phone-card">
+            <div class="phone-top">
+              <span class="phone-camera"></span>
+              <span class="phone-speaker"></span>
+            </div>
+            <div class="chat-bubble chat-bubble-in">
+              <span class="bubble-label">WhatsApp</span>
+              <p>Send a message without adding the contact first.</p>
+            </div>
+            <div class="chat-bubble chat-bubble-out">
+              <p>Paste a number, tap send, done.</p>
+            </div>
+            <div class="shortcut-row">
+              <span class="shortcut-pill">Fast</span>
+              <span class="shortcut-pill">Clean</span>
+              <span class="shortcut-pill">Direct</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="generator-section" aria-labelledby="generator-title">
+        <div class="generator-card">
+          <div class="generator-copy">
+            <p class="section-kicker">Link generator</p>
+            <h2 id="generator-title">Create your WhatsApp link</h2>
+            <p>
+              Start with India by default, add a number, and optionally include a ready-to-send message.
+            </p>
+          </div>
+
+          <form class="generator-form">
+            <div class="field-row">
+              <label class="field field-code" for="country-code">
+                <span>Country code</span>
+                <select id="country-code" name="countryCode">
+                  <option selected>🇮🇳 +91</option>
+                  <option>🇺🇸 +1</option>
+                  <option>🇬🇧 +44</option>
+                  <option>🇦🇪 +971</option>
+                </select>
+              </label>
+
+              <label class="field field-number" for="phone-number">
+                <span>Phone number</span>
+                <input
+                  id="phone-number"
+                  name="phoneNumber"
+                  type="tel"
+                  inputmode="tel"
+                  placeholder="98765 43210"
+                />
+              </label>
+            </div>
+
+            <label class="field field-message" for="message">
+              <span>Pre-filled message (optional)</span>
+              <textarea id="message" name="message" rows="4">Hi, I found your number on WA Link and would like to chat.</textarea>
+            </label>
+
+            <button class="generator-button" type="submit">Generate Link</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="output-section" aria-labelledby="output-title">
+        <div class="output-card">
+          <div class="output-copy">
+            <p class="section-kicker">Output</p>
+            <h2 id="output-title">Your WhatsApp link is ready</h2>
+            <p>
+              Copy the link, open it in WhatsApp, or hand off the QR code for scanning.
+            </p>
+          </div>
+
+          <div class="output-grid">
+            <div class="link-panel">
+              <label class="field output-field" for="generated-link">
+                <span>Generated link</span>
+                <div class="link-box">
+                  <input
+                    id="generated-link"
+                    name="generatedLink"
+                    type="text"
+                    value="https://wa.me/919876543210?text=Hi%2C%20I%20found%20your%20number%20on%20WA%20Link%20and%20would%20like%20to%20chat."
+                    readonly
+                  />
+                  <button class="copy-button" type="button">Copy Link</button>
+                </div>
+              </label>
+
+              <div class="output-actions">
+                <a class="button button-primary output-action" href="#">Open in WhatsApp</a>
+                <a class="button button-secondary output-action" href="#">Download QR</a>
+              </div>
+            </div>
+
+            <div class="qr-panel">
+              <div class="qr-frame">
+                <img
+                  class="qr-image"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fwa.me%2F919876543210%3Ftext%3DHi%252C%2520I%2520found%2520your%2520number%2520on%2520WA%2520Link%2520and%2520would%2520like%2520to%2520chat."
+                  alt="QR code for the generated WhatsApp link"
+                />
+              </div>
+              <p class="qr-caption">Scan to open the link instantly on a phone.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works-section" aria-labelledby="works-title">
+        <div class="works-card">
+          <div class="works-copy">
+            <p class="section-kicker">How it works</p>
+            <h2 id="works-title">Three simple steps</h2>
+            <p>
+              WA Link keeps the flow short: enter a number, generate the link, and share it anywhere.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-icon" aria-hidden="true">1</div>
+              <h3>Enter number</h3>
+              <p>Choose the country code and type the phone number you want to reach.</p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-icon" aria-hidden="true">2</div>
+              <h3>Get link</h3>
+              <p>Generate a clean WhatsApp link with an optional pre-filled message.</p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-icon" aria-hidden="true">3</div>
+              <h3>Share anywhere</h3>
+              <p>Copy the link, open it in WhatsApp, or scan the QR from any device.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" aria-label="Site footer">
+        <span>Built by Darshan</span>
+        <a href="https://github.com/imDarshanGK/wa-direct" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </footer>
+    </main>
+  </body>
+</html>
