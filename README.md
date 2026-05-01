@@ -88,4 +88,5 @@ MIT © [Darshan](https://github.com/imDarshanGK)
 Built for fast, contact-free WhatsApp messaging 💚 .
 
 **Repository:** [github.com/imDarshanGK/wa-direct](https://github.com/imDarshanGK/wa-direct)
-**Live demo:** https://walinkify.netlify.app
+
+**Live demo:** [https://walinkify.netlify.app](https://walinkify.netlify.app)
