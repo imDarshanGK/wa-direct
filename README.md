@@ -1,98 +1,91 @@
-# WA Direct
+# WA Link
 
 ![License](https://img.shields.io/badge/License-MIT-blue) ![HTML](https://img.shields.io/badge/HTML-5-orange) ![CSS](https://img.shields.io/badge/CSS-3-blue) ![Status](https://img.shields.io/badge/Status-Active-green) ![Deploy](https://img.shields.io/badge/Deploy-Netlify-00C7B7)
 
-Message anyone on WhatsApp without saving their number.
+WA Link is a clean, static WhatsApp link generator that lets you message anyone without saving their number.
 
-A simple, one-page generator that creates ready-to-share WhatsApp links with an optional pre-filled message.
-
-```
-https://wa.me/{number}?text={message}
-```
+It creates a direct `wa.me` link, a short shareable link, and a QR code from the same number and message.
 
 ## Features
 
-- **Instant contact-free messaging** - Start a chat with anyone without saving their number
-- **Country code support** - Default to India (+91) or choose from multiple countries
-- **Pre-filled messages** - Include an optional message that opens automatically in WhatsApp
-- **QR code generation** - Scannable links for hands-free sharing
-- **Copy & share** - One-click link copying or direct WhatsApp opener
-- **Mobile responsive** - Fully optimized for phone and desktop
-- **Zero backend** - Pure static HTML + CSS. No server, no tracking
+- **Direct WhatsApp links** - Generate a chat link without adding the contact first
+- **Country selector** - Start with India by default and switch to other countries quickly
+- **Optional message** - Pre-fill a message before sending
+- **Short link + QR** - Share a compact link or scan a QR code on mobile
+- **Recent numbers** - Reuse recently entered numbers with one tap
+- **Copy and open actions** - Copy links, open WhatsApp, or download the QR
 
-## How it works
 
-### 1. Enter number
+## How It Works
 
-Choose the country code (🇮🇳 +91 by default) and type the phone number you want to reach.
+### 1. Enter the number
 
-### 2. Get link
+Choose a country code, type the phone number, and optionally add a message.
 
-Generate a clean WhatsApp link with an optional pre-filled message that appears when the recipient opens the chat.
+### 2. Generate the link
 
-Example:
+The app builds a WhatsApp URL in this format:
+
+```text
+https://wa.me/{number}?text={message}
 ```
-https://wa.me/9198765xxxxx?text=Hi%2C%20I%20found%20your%20number%20on%20WA%20Link%20and%20would%20like%20to%20chat.
-```
 
-### 3. Share anywhere
+### 3. Share it
 
-- Copy the link and paste it in email, social media, or chat
-- Open in WhatsApp directly from the tool
-- Download the QR code and scan on any device
+- Copy the primary or short link
+- Open the chat in WhatsApp directly
+- Use the QR code for quick mobile scanning
 
 ## Tech Stack
 
-- **HTML5** - Semantic markup
-- **CSS3** - Dark theme with WhatsApp green accents, fully responsive
-- **Vanilla JS** - No dependencies, lightweight
+- **HTML5** - Semantic page structure
+- **CSS3** - Dark, responsive UI with WhatsApp green accents
+- **Vanilla JavaScript** - No framework, no build step
 
 ## Deploying to Netlify
 
-This project is zero-config. No build step required.
+This project is ready for Netlify as a static site.
 
-### Option A - Connect Git
+### Netlify settings
 
-1. Push this repo to GitHub
-2. In Netlify: **Add new site** → **Import an existing project** → select your repo
-3. Leave **Build command** empty and **Publish directory** as `.` (root)
-4. Deploy
+- **Build command:** leave empty
+- **Publish directory:** `.`
 
+### Git deploy
 
+1. Push the repo to GitHub
+2. In Netlify, choose **Add new site** → **Import an existing project**
+3. Select this repository
+4. Keep the settings above and deploy
 
-## File structure
+## Local Preview
 
-```
+You can open `index.html` directly in the browser or use a static server like Live Server in VS Code.
+
+## File Structure
+
+```text
 wa-direct/
-├── index.html          # Page markup + structure
-├── styles.css          # Dark theme, responsive layout
-├── README.md           # This file
-└── LICENSE             # MIT license
+├── index.html   # App markup
+├── styles.css   # Layout, theme, and responsiveness
+├── script.js    # Link generation and interactions
+├── README.md    # Project notes
+└── LICENSE      # MIT license
 ```
 
-## Usage
+## Browser Support
 
-1. Open [https://wa-direct-app.netlify.app](https://wa-direct-app.netlify.app)
-2. Select country code and enter phone number
-3. (Optional) Add a pre-filled message
-4. Click **Generate Link**
-5. Copy, open in WhatsApp, or download QR code
-6. Share with anyone instantly
-
-## Browser support
-
-- Chrome / Edge (latest)
-- Firefox (latest)
-- Safari (latest)
+- Chrome / Edge
+- Firefox
+- Safari
 - Mobile browsers on iOS and Android
 
 ## License
 
 MIT © [Darshan](https://github.com/imDarshanGK)
 
----
 
-Built with 💚 for WhatsApp users who want to skip the contact-saving dance.
+Built for fast, contact-free WhatsApp messaging 💚 .
 
-**Live:** [wa-direct-app.netlify.app](https://wa-direct-app.netlify.app)  
 **Repository:** [github.com/imDarshanGK/wa-direct](https://github.com/imDarshanGK/wa-direct)
+**Live demo:** https://walinkify.netlify.app
