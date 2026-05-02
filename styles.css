@@ -129,14 +129,15 @@ body::before {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(380px, 1.1fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
   align-items: center;
-  gap: 36px;
+  gap: 24px;
   padding: 18px 0 24px;
 }
 
 .hero-copy {
-  max-width: 560px;
+  max-width: 640px;
+  animation: heroFadeIn 520ms ease-out;
 }
 
 .eyebrow {
@@ -155,7 +156,7 @@ body::before {
 
 h1 {
   margin: 0;
-  max-width: 11.5ch;
+  max-width: 14.3ch;
   font-size: clamp(2.05rem, 3.5vw, 3.55rem);
   line-height: 0.95;
   font-weight: 600;
@@ -224,7 +225,7 @@ h1 {
 
 .hero-art {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -993,6 +994,37 @@ h1 {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.04);
   position: relative;
   overflow: hidden;
+  animation: heroFloat 5.5s ease-in-out infinite;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy,
+  .phone-card {
+    animation: none;
+  }
 }
 
 .phone-card::before {
