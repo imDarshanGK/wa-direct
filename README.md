@@ -4,14 +4,14 @@
 
 WA Link is a clean, static WhatsApp link generator that lets you message anyone without saving their number.
 
-It creates a direct `wa.me` link, a short shareable link, and a QR code from the same number and message.
+It creates a direct `wa.me` link, a local short link (same browser), and a QR code from the same number and message.
 
 ## Features
 
 - **Direct WhatsApp links** - Generate a chat link without adding the contact first
 - **Country selector** - Start with India by default and switch to other countries quickly
 - **Optional message** - Pre-fill a message before sending
-- **Short link + QR** - Share a compact link or scan a QR code on mobile
+- **Short link + QR** - Create a compact local short link and scan a QR code on mobile
 - **Recent numbers** - Reuse recently entered numbers with one tap
 - **Copy and open actions** - Copy links, open WhatsApp, or download the QR
 
@@ -32,7 +32,7 @@ https://wa.me/{number}?text={message}
 
 ### 3. Share it
 
-- Copy the primary or short link
+- Copy the primary link (or local short link)
 - Open the chat in WhatsApp directly
 - Use the QR code for quick mobile scanning
 
