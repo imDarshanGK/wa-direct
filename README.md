@@ -1,6 +1,12 @@
 # WA Link
 
-![License](https://img.shields.io/badge/License-MIT-blue) ![HTML](https://img.shields.io/badge/HTML-5-orange) ![CSS](https://img.shields.io/badge/CSS-3-blue) ![Status](https://img.shields.io/badge/Status-Active-green) ![Deploy](https://img.shields.io/badge/Deploy-Netlify-00C7B7)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![HTML](https://img.shields.io/badge/HTML5-orange)
+![CSS](https://img.shields.io/badge/CSS3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Status](https://img.shields.io/badge/Status-Active-green)
+![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7)
+![Responsive](https://img.shields.io/badge/Responsive-Mobile%20Friendly-brightgreen)
 
 WA Link is a clean, static WhatsApp link generator that lets you message anyone without saving their number.
 
